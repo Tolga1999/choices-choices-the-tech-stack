@@ -17,7 +17,9 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](https://github.com/fdnd-task/ch
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
+![image](https://github.com/Tolga1999/choices-choices-the-tech-stack/assets/112855878/f4ec2ca1-1a08-45bc-9d6c-aeabdd663a6f)
 <!-- Voeg een link toe naar Github Pages 🌐-->
+Epic Overzichtspagina partners https://github.com/users/WesleySchorel/projects/8?pane=issue&itemId=39953859
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
