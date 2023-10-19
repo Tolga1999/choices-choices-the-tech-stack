@@ -1,9 +1,9 @@
 <template>
     <header>
         <nav>
-            <a href="/">
+            <NuxtLink to="/">
                 <img src=/img/vervoerregio_amsterdam_logo.svg alt="logo vervoerregio" />
-            </a>
+            </NuxtLink>
 
             <section class="header-icons">
                 <a href="/info">
@@ -27,7 +27,7 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: #202020;
-    padding: 1em;
+    padding: 1.5em 1em;
     border-bottom: 2px solid #454545;
 }
 
