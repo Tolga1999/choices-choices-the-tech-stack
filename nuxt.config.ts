@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  devtools: { enabled: true}, // devtools for help
   css: ['~/assets/css/global.css'],
 
   // needed for page transition in app.vue
