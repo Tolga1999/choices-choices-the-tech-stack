@@ -7,4 +7,10 @@ export default defineNuxtConfig({
   app: {
     pageTransition: {name: 'fade', mode: 'out-in'} //default mode is out-in
   },
+
+  runtimeConfig: {
+    public: {
+      datoCmsToken: process.env.DATO_CMS_TOKEN,
+    }
+  }
 })
