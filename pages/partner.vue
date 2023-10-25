@@ -1,5 +1,4 @@
 <template>
-    <main>
-        <h1>Partner</h1>
-    </main>
+    <!-- heading component -->
+    <Heading />
 </template>
