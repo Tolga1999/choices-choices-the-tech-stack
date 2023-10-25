@@ -8,13 +8,10 @@ const props = defineProps({
 </script>
 
 <template>
-    <!-- <h2>{{ title }}</h2>
-    <img :src="imgUrl" alt="partner logo"> -->
-    
 	<NuxtLink to="partner">
 		<section class="logo-partner-section">
 			<div>
-                <img height="60px" :src="imgUrl" alt="partner logo">
+                <img class="logo" :src="imgUrl" alt="partner logo">
 				<h2 class="name">{{ title }}</h2>
 			</div>
 			<img src="/img/arrow_right.svg" alt="arrow right" />
@@ -55,6 +52,10 @@ a:hover {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+}
+
+.logo{
+    height: 60px;
 }
 
 h2 {

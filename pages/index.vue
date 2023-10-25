@@ -3,7 +3,7 @@
 // graphql query naar dato
 const QUERY = `
 {
-  allPartners {
+  allPartners(filter: {title: {}}, orderBy: title_ASC) {
     id
     title
     logo {
@@ -17,20 +17,22 @@ const { data, error } = await useGraphqlQuery({ query: QUERY });
 </script>
 
 <template>
-  <!-- heading component -->
-  <Heading />
+  <main> <!-- root element main (needed for pages) -->
+    <!-- heading component -->
+    <Heading />
 
-  <form>
-    <label for="partner-search">Zoek een partner</label>
-    <input type="search" id="partner-search" placeholder="Connexxion" />
-  </form>
+    <form>
+      <label for="partner-search">Zoek een partner</label>
+      <input type="search" id="partner-search" placeholder="Connexxion" />
+    </form>
 
-  <ul>
-    <li v-for="partner in data.allPartners">
-      <!-- passing data to title, imgUrl and lastUpdated props -->
-      <Partner :title="partner.title" :imgUrl="partner.logo.url" :lastUpdated="'12 min.'" />
-    </li>
-  </ul>
+    <ul>
+      <li v-for="partner in data.allPartners">
+        <!-- passing data to title, imgUrl and lastUpdated props -->
+        <Partner :title="partner.title" :imgUrl="partner.logo.url" :lastUpdated="'12 min.'" />
+      </li>
+    </ul>
+  </main>
 </template>
 
 <style scoped>
@@ -56,6 +58,7 @@ input {
   font-weight: 600;
   padding-left: 0.75em;
 }
+
 /* form end */
 
 ul {

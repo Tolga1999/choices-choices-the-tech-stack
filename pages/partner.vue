@@ -1,4 +1,6 @@
 <template>
-    <!-- heading component -->
-    <Heading />
+    <main> <!-- root element main (needed for pages) -->
+        <!-- heading component -->
+        <Heading />
+    </main>
 </template>
