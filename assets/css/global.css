@@ -5,7 +5,7 @@
 
     /* Main Colors */
     --c-magenta: rgb(185, 0, 95);
-    --c-pink: rgb(72, 28, 46);
+    --c-pink: rgb(227, 0, 89);
 
     /* Text */
     --c-white: rgb(255, 255, 255);
@@ -25,6 +25,9 @@
 
     /* input */
     --c-border: rgb(255, 255, 255);
+    
+    /* modal button */
+    --c-modal-button: rgb(99, 99, 99);
 }
 
 * {
