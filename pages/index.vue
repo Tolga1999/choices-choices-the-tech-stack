@@ -20,12 +20,10 @@ const { data, error } = await useGraphqlQuery({ query: QUERY });
 <template>
   <main>
     <h1>Partners</h1>
-
-    <Partner />
     
     <section v-for="partner in data.allPartners">
-      <h2>{{ partner.title }}</h2>
-      <img :src="partner.logo.url" alt="partner logo">
+      <!-- passing data to title, imgUrl and lastUpdated props -->
+      <Partner :title="partner.title" :imgUrl="partner.logo.url" :lastUpdated="'12 min.'" />
     </section>
     
     <NuxtLink to="partner">Partner link</NuxtLink>
