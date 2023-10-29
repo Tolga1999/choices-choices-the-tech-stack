@@ -1,6 +1,13 @@
+<script setup>
+// define props for component (properties)
+const props = defineProps({
+    headingH1: String,
+})
+</script>
+
 <template>
     <section>
-        <h1>Partners overzicht</h1>
+        <h1>{{ headingH1 }}</h1>
     </section>
 </template>
 
