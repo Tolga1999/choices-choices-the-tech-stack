@@ -9,6 +9,9 @@ const QUERY = `
 {
   allPartners(filter: {slug: {eq: "${params}"}}) {
     title
+    logo{
+        url
+    }
     website {
       title
       logo{
@@ -25,7 +28,7 @@ const { data, error } = await useGraphqlQuery({ query: QUERY });
 <template>
   <main> <!-- root element main (needed for pages) -->
     <!-- heading component -->
-    <Heading :headingH1="data.allPartners[0].title"/>
+    <Heading :logoUrl="data.allPartners[0].logo.url" :headingH1="data.allPartners[0].title"/>
 
     <!-- search form -->
     <SearchForm :label="'Zoek een website'" :input="'Home'"/>

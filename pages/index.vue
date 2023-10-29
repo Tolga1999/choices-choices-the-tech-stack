@@ -20,7 +20,7 @@ const { data, error } = await useGraphqlQuery({ query: QUERY });
 <template>
   <main> <!-- root element main (needed for pages) -->
     <!-- heading component -->
-    <Heading :headingH1="'Partners Overzicht'"/>
+    <Heading :headingH1="'Partners overzicht'"/>
 
     <!-- search form -->
     <SearchForm :label="'Zoek een partner'" :input="'9292'"/>
