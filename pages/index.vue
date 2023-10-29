@@ -22,10 +22,8 @@ const { data, error } = await useGraphqlQuery({ query: QUERY });
     <!-- heading component -->
     <Heading />
 
-    <form>
-      <label for="partner-search">Zoek een partner</label>
-      <input type="search" id="partner-search" placeholder="Connexxion" />
-    </form>
+    <!-- search form -->
+    <SearchForm :label="'Zoek een partner'" :input="'9292'"/>
 
     <ul>
       <li v-for="partner in data.allPartners">
@@ -35,33 +33,6 @@ const { data, error } = await useGraphqlQuery({ query: QUERY });
     </ul>
   </main>
 </template>
-
-<style scoped>
-/* form */
-form {
-  margin: 0 1em;
-  margin-bottom: 1em;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 1em;
-  font-weight: 600;
-}
-
-input {
-  padding: 0.5em;
-  border: 1px solid var(--c-modal-button);
-  background-color: var(--c-container);
-  border-radius: 0.25em;
-  color: var(--c-white);
-  width: 8.5em;
-  font-size: 1em;
-  font-weight: 600;
-  padding-left: 0.75em;
-}
-
-/* form end */
-</style>
 
 <style>
 ul {

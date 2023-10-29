@@ -1,7 +1,7 @@
 <script setup>
 // define props for component (properties)
 const props = defineProps({
-    slug: String,
+    partnerTitle: String,
     title: String,
     imgUrl: String,
     lastUpdated: String
@@ -9,13 +9,12 @@ const props = defineProps({
 </script>
 
 <template>
-    <h1>{{ slug }}</h1>
     <NuxtLink to="/">
         <section class="logo-partner-section">
             <div>
                 <!-- attributes dont accept curly brackets, reason for v-bind or : -->
                 <img class="logo" :src="imgUrl" alt="website logo">
-                <h2>GVB <span>/{{ title }}</span></h2>
+                <h2>{{ partnerTitle }}<span>/{{ title }}</span></h2>
             </div>
             <img src="/img/arrow_right.svg" alt="arrow right" />
         </section>
