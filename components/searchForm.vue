@@ -16,13 +16,12 @@ const props = defineProps({
 <style scoped>
 /* form */
 form {
-  margin: 0 1em;
-  margin-bottom: 1em;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 1em;
   font-weight: 600;
+  margin-right: 1em;
 }
 
 input {
