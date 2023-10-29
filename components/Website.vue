@@ -9,25 +9,26 @@ const props = defineProps({
 </script>
 
 <template>
-	<NuxtLink :to="slug">
-		<section class="logo-partner-section">
-			<div>
+    <h1>{{ slug }}</h1>
+    <NuxtLink to="/">
+        <section class="logo-partner-section">
+            <div>
                 <!-- attributes dont accept curly brackets, reason for v-bind or : -->
-                <img class="logo" :src="imgUrl" alt="partner logo">
-				<h2 class="name">{{ title }}</h2>
-			</div>
-			<img src="/img/arrow_right.svg" alt="arrow right" />
-		</section>
+                <img class="logo" :src="imgUrl" alt="website logo">
+                <h2>GVB <span>/{{ title }}</span></h2>
+            </div>
+            <img src="/img/arrow_right.svg" alt="arrow right" />
+        </section>
 
-		<section class="more-info-section">
+        <section class="more-info-section">
             <span>Laatst bewerkt: {{ lastUpdated }} geleden</span>
 
-			<div class="progress-container">
-				<progress id="progress-partner" max="100" value="60"></progress>
-				<label class="progress-percentage" for="progress-partner">60%</label>
-			</div>
-		</section>
-	</NuxtLink>
+            <div class="progress-container">
+                <progress id="progress-partner" max="100" value="60"></progress>
+                <label class="progress-percentage" for="progress-partner">60%</label>
+            </div>
+        </section>
+    </NuxtLink>
 </template>
 
 <style scoped>
@@ -56,13 +57,19 @@ a:hover {
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     height: 60px;
 }
 
 h2 {
     font-size: 1.5em;
     margin-top: 0.05em;
+    color: var(--c-grey);
+}
+
+span {
+    display: block;
+    color: var(--c-white);
 }
 
 .more-info-section {
